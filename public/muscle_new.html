@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>種目登録</title>
+</head>
+<body>
+    <h2>新しいトレーニング種目を登録</h2>
+    <form action="/muscle" method="POST">
+        <label for="name">種目名:</label><br>
+        <input type="text" name="name" required><br>
+        
+        <label for="part">対象部位:</label><br>
+        <input type="text" name="part" required><br>
+        
+        <label for="difficulty">難易度:</label><br>
+        <input type="text" name="difficulty"><br>
+        
+        <label for="description">解説:</label><br>
+        <input type="text" name="description"><br>
+        <br>
+        <input type="submit" value="登録">
+    </form>
+</body>
+</html>

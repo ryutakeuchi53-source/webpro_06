@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>編集: <%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %> の情報を編集</h2>
+  <form action="/muscle/update/<%= id %>" method="POST">
+    <table>
+      <tr><th>項目</th><th>データ</th></tr>
+      <tr><td>種目名</td><td><input type="text" name="name" value="<%= data.name %>"></td></tr>
+      <tr><td>対象部位</td><td><input type="text" name="part" value="<%= data.part %>"></td></tr>
+      <tr><td>難易度</td><td><input type="text" name="difficulty" value="<%= data.difficulty %>"></td></tr>
+      <tr><td>解説</td><td><input type="text" name="description" value="<%= data.description %>"></td></tr>
+    </table>
+    <input type="submit" value="更新">
+  </form>
+  <a href="/muscle">一覧に戻る</a>
+</body>
+</html>

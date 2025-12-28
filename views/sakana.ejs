@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>サカナクション セトリリスト</title>
+</head>
+<body>
+  <h2>サカナクション ライブセトリ</h2>
+  <table>
+    <tr><th>ID</th><th>曲名</th><th>収録アルバム</th><th>タイプ</th></tr>
+    <% let number = 0 %>
+      <% for( let row of data ) { %>
+        <tr>
+            <td><%= row.id %></td>
+            <td><a href="/sakana/<%= number %>"><%= row.name %></a></td>
+            <td><%= row.album %></td>
+            <td><%= row.type %></td>
+        </tr>
+        <% number += 1 %>
+      <% } %>
+  </table>
+  <br>
+  <a href="/sakana/create">新規追加</a>
+</body>
+</html>

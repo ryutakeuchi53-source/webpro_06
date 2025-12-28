@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>編集: <%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %>の編集</h2>
+  
+  <form action="/sakana/update/<%= id %>" method="POST">
+    <table>
+      <tr><td>ID</td><td><%= data.id %></td></tr>
+      
+      <tr>
+        <td>曲名</td>
+        <td><input type="text" name="name" value="<%= data.name %>"></td>
+      </tr>
+      <tr>
+        <td>収録アルバム</td>
+        <td><input type="text" name="album" value="<%= data.album %>"></td>
+      </tr>
+      <tr>
+        <td>演奏形態</td>
+        <td><input type="text" name="type" value="<%= data.type %>"></td>
+      </tr>
+      <tr>
+        <td>備考</td>
+        <td><input type="text" name="detail" value="<%= data.detail %>"></td>
+      </tr>
+    </table>
+    <br>
+    <input type="submit" value="更新">
+  </form>
+  
+  <br>
+  <a href="/sakana">一覧に戻る</a>
+</body>
+</html>

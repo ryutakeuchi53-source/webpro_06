@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.name %>の詳細</title>
+</head>
+<body>
+  <h2><%= data.name %> のデータ</h2>
+  <table>
+    <tr><th>項目</th><th>情報</th></tr>
+    <tr><td>ID</td><td><%= data.id %></td></tr>
+    <tr><td>名前</td><td><%= data.name %></td></tr>
+    <tr><td>ランク/種族</td><td><%= data.rank %></td></tr>
+    <tr><td>特徴/遺物</td><td><%= data.feature %></td></tr>
+    <tr><td>主な深度</td><td><%= data.depth %></td></tr>
+  </table>
+  <br>
+  <a href="/abyss/edit/<%= id %>">情報を修正</a> | 
+  <a href="/abyss/delete/<%= id %>">削除（ラストダイブ）</a>
+  <br><br>
+  <a href="/abyss">一覧に戻る</a>
+</body>
+</html>

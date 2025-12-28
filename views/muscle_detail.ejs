@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.name %></title>
+</head>
+<body>
+  <h2><%= data.name %> の詳細</h2>
+  <table>
+    <tr><th>項目</th><th>データ</th></tr>
+    <tr><td>ID</td><td><%= data.id %></td></tr>
+    <tr><td>種目名</td><td><%= data.name %></td></tr>
+    <tr><td>対象部位</td><td><%= data.part %></td></tr>
+    <tr><td>難易度</td><td><%= data.difficulty %></td></tr>
+    <tr><td>解説・コツ</td><td><%= data.description %></td></tr>
+  </table>
+  <br>
+  <a href="/muscle/edit/<%= id %>">編集する</a> | 
+  <a href="/muscle/delete/<%= id %>">削除する</a>
+  <br><br>
+  <a href="/muscle">一覧に戻る</a>
+</body>
+</html>

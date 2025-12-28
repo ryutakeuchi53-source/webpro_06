@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>新規登録</title>
+</head>
+<body>
+    <h2>探窟家・生物の新規登録</h2>
+    <form action="/abyss" method="POST">
+        <label for="name">名前:</label><br>
+        <input type="text" name="name" required><br>
+        
+        <label for="rank">ランク/種族:</label><br>
+        <input type="text" name="rank" required><br>
+        
+        <label for="feature">特徴/遺物:</label><br>
+        <input type="text" name="feature"><br>
+        
+        <label for="depth">主な深度:</label><br>
+        <input type="text" name="depth"><br>
+        <br>
+        <input type="submit" value="記録する">
+    </form>
+</body>
+</html>

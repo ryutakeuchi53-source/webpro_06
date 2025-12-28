@@ -1,0 +1,25 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%= data.name %>の詳細</title>
+</head>
+<body>
+  <h2><%= data.name %>の詳細</h2>
+  <table border="1">
+    <tr><th>項目</th><th>データ</th></tr>
+    <tr><td>ID</td><td><%= data.id %></td></tr>
+    <tr><td>曲名</td><td><%= data.name %></td></tr>
+    <tr><td>収録アルバム</td><td><%= data.album %></td></tr>
+    <tr><td>演奏形態</td><td><%= data.type %></td></tr>
+    <tr><td>備考</td><td><%= data.detail %></td></tr>
+  </table>
+  <br>
+  <a href="/sakana/edit/<%= id %>">編集</a>
+  
+  <a href="/sakana/delete/<%= id %>" onclick="return confirm('本当に削除しますか？');">削除</a>
+  
+  <br><br>
+  <a href="/sakana">一覧に戻る</a>
+</body>
+</html>

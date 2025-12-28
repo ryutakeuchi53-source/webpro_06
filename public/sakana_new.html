@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>新規曲登録</title>
+</head>
+<body>
+    <h2>セットリストへの追加</h2>
+    <form action="/sakana" method="POST">
+        
+        <label for="name">曲名(name):</label><br>
+        <input type="text" name="name" required><br>
+        
+        <label for="album">収録アルバム(album):</label><br>
+        <input type="text" name="album" required><br>
+        
+        <label for="type">演奏形態(type):</label><br>
+        <input type="text" name="type"><br>
+        
+        <label for="detail">備考(detail):</label><br>
+        <input type="text" name="detail"><br>
+        
+        <br>
+        <input type="submit" value="登録">
+    </form>
+</body>
+</html>
